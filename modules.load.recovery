@@ -20,7 +20,7 @@ glink_pkt.ko
 glink_probe.ko
 gpucc-kalama.ko
 haptic.ko
-hvc_gunyah.ko
+
 i3c-master-msm-geni.ko
 last_boot_reason.ko
 leds-qti-flash.ko
@@ -71,6 +71,10 @@ phy-qcom-emu.ko
 phy-qcom-ufs-qmp-v4-khaje.ko
 phy-qcom-ufs-qmp-v4.ko
 phy-qcom-ufs-qmp-v4-waipio.ko
+phy-qcom-ufs.ko
+phy-qcom-ufs-qmp-v4-kalama.ko
+ufshcd-crypto-qti.ko
+ufs_qcom.ko
 pinctrl-spmi-gpio.ko
 pinctrl-spmi-mpp.ko
 pm8941-pwrkey.ko
