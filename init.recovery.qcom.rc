@@ -13,6 +13,12 @@ on init
     write /sys/class/backlight/panel0-backlight/brightness 200
     setprop sys.usb.configfs 1
 
+    # Load kernel modules for UFS storage
+    insmod /vendor/lib/modules/phy-qcom-ufs.ko
+    insmod /vendor/lib/modules/phy-qcom-ufs-qmp-v4-kalama.ko
+    insmod /vendor/lib/modules/ufshcd-crypto-qti.ko
+    insmod /vendor/lib/modules/ufs_qcom.ko
+
 on property:ro.boot.usbcontroller=*
     setprop sys.usb.controller ${ro.boot.usbcontroller}
     wait /sys/bus/platform/devices/${ro.boot.usb.dwc3_msm:-a600000.ssusb}/mode
